@@ -22,3 +22,6 @@ include $(DEVICE_PATH)/board/*.mk
 
 # inherit from the proprietary version
 include vendor/wingtech/wt88047/BoardConfigVendor.mk
+
+#vendorsetup.sh
+include device/wingtech/wt88047/vendorsetup.sh
