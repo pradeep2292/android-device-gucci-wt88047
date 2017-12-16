@@ -62,3 +62,8 @@ BLOCK_BASED_OTA := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 TARGET_KERNEL_CONFIG := gucci_defconfig
+
+TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
+TARGET_NO_RPC := true
+
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
