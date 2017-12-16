@@ -60,3 +60,5 @@ BLOCK_BASED_OTA := false
 #TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+TARGET_KERNEL_CONFIG := gucci_defconfig
