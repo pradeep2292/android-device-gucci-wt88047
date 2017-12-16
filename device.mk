@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/wingtech/wt88047/wt88047-vendor.mk)
+$(call inherit-product, vendor/xiaomi/gucci/gucci-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -23,4 +23,4 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 include $(LOCAL_PATH)/product/*.mk
 
 # Inherit the rest from msm8916-common
-$(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
+#$(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
