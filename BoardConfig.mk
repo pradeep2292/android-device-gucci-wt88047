@@ -40,7 +40,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 #ARGET_BOOTLOADER_BOARD_NAME := gucci
 
-BOARD_KERNEL_CMDLINE := androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
+#BOARD_KERNEL_CMDLINE := androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
 #BOARD_KERNEL_BASE := 0x
 BOARD_KERNEL_PAGESIZE := 2048
 
@@ -70,4 +70,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
 PRODUCT_COPY_FILES += \
-	$(TARGET_PREBUILT_KERNEL):kernel
+$(TARGET_PREBUILT_KERNEL):kernel
+
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-android-
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
