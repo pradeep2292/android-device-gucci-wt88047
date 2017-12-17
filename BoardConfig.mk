@@ -38,11 +38,11 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := gucci
+#ARGET_BOOTLOADER_BOARD_NAME := gucci
 
-BOARD_KERNEL_CMDLINE := 
-BOARD_KERNEL_BASE := 0x
-BOARD_KERNEL_PAGESIZE := 
+BOARD_KERNEL_CMDLINE := androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
+#BOARD_KERNEL_BASE := 0x
+BOARD_KERNEL_PAGESIZE := 2048
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
