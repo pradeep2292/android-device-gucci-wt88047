@@ -69,8 +69,11 @@ TARGET_NO_RPC := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
+
+ifeq ($(TARGET_PRODUCT),lineage_gucci)
 PRODUCT_COPY_FILES += \
 $(TARGET_PREBUILT_KERNEL):kernel
+endif
 
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-android-
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+#BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
