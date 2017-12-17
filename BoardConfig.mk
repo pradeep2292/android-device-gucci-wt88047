@@ -51,7 +51,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/gucci
+#TARGET_KERNEL_SOURCE := kernel/xiaomi/gucci
 
 # build old-style zip files (required for ota updater)
 BLOCK_BASED_OTA := false
@@ -61,9 +61,13 @@ BLOCK_BASED_OTA := false
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-TARGET_KERNEL_CONFIG := gucci_defconfig
+#TARGET_KERNEL_CONFIG := gucci_defconfig
 
 TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
 TARGET_NO_RPC := true
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+TARGET_PREBUILT_KERNEL := device/xiaomi/zImage
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
