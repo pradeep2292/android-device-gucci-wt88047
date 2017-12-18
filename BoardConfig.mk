@@ -76,4 +76,4 @@ $(TARGET_PREBUILT_KERNEL):kernel
 endif
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-#BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+include device/cyanogen/msm8916-common/BoardConfigCommon.mk
