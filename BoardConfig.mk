@@ -91,4 +91,4 @@ endif
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+#include device/cyanogen/msm8916-common/BoardConfigCommon.mk
