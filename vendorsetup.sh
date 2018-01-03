@@ -1,1 +1,1 @@
-add_lunch_combo lineage_wt88047-userdebug
+add_lunch_combo lineage_gucci-userdebug
