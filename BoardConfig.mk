@@ -17,11 +17,9 @@ FORCE_32_BIT := true
 
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/wingtech/wt88047
+DEVICE_PATH := device/xiaomi/gucci
 include $(DEVICE_PATH)/board/*.mk
 
 # inherit from the proprietary version
-include vendor/wingtech/wt88047/BoardConfigVendor.mk
+include vendor/xiaomi/gucci/BoardConfigVendor.mk
 
-#vendorsetup.sh
-include device/wingtech/wt88047/vendorsetup.sh
