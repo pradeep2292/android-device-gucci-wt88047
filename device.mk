@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/gucci/gucci-vendor.mk)
+$(call inherit-product, vendor/xiaomi/gucci/gucci-vendor-blobs.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
