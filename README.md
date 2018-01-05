@@ -2,11 +2,10 @@ Copyright (C) 2016 - The CyanogenMod Project
 
 Copyright (C) 2017 - The LineageOS Project
 
-Device configuration for Redmi 2 / Pro / Prime (wt88047)
+Device configuration for Redmi Note Prime (gucci)
 ========================================================
 
-The Wingtech Redmi 2 (codenamed _"wt88047"_) is a mid-range smartphone from Wingtech.
-It was announced on January 2015.
+The Xiaomi Redmi Note Prime (codenamed _"gucci"_) is a mid-range smartphone from Xiaomi.
 
 ## Device specifications
 
@@ -27,4 +26,4 @@ Front Camera | 2 MP, 720p
 
 ## Device picture
 
-![Redmi 2](http://cdn.ndtv.com/tech/xiaomi_redmi_2_white_screen.jpg "Redmi 2 in white")
+![Redmi Note Prime](https://drop.ndtv.com/TECH/product_database/images/12142015113357AM_635_xiaomi_redmi_note_prime.jpeg?downsize=770:*&output-quality=70&output-format=webp)
